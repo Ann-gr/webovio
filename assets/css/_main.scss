@@ -1,0 +1,104 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+  color: $text-color;
+}
+a {
+  font-size: 16px;
+  color: $link-color;
+}
+.fs-16 {
+  font-size: 16px;
+  padding-bottom: 45px;
+}
+main {
+  background-color: $bg-color;
+  width: 1441px;
+  margin: 0 auto;
+}
+.clients {
+  display: inline-flex;
+  background: $bg-color;
+  box-shadow: 50px 50px 100px rgba(0, 0, 0, 0.145947);
+  border-radius: 2px;
+  padding: 60px 166px 54px 65px;
+  margin-left: 165px;
+  margin-top: -103px;
+  width: 1045px;
+  height: 113px;
+  & img {
+    width: 156px;
+    height: 113px;
+    padding-right: 66px;
+  }
+}
+.section-services .border-bottom {
+  height: 794px;
+}
+.border-bottom {
+  border-bottom: 1px solid rgba(33, 56, 66, 0.0955529);
+}
+.main-offer {
+  width: 475px;
+  height: 366px;
+  padding-top: 120px;
+  padding-right: 160px;
+  float: left;
+  & p {
+    color: $p-color;
+  }
+  & h2 {
+    font-size: 36px;
+    color: $quote-color;
+  }
+  & span {
+    background: rgba(255, 215, 35, 0.1);
+  }
+  & .link {
+    padding-top: 42px;
+  }
+}
+.employee {
+  width: 426px;
+  height: 340px;
+  padding: 120px 8px 60px 40px;
+  box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.145947);
+  background-color: $bg-color;
+  float: right;
+  & p {
+    font-style: italic;
+    font-size: 24px;
+    line-height: 40px;
+    color: $quote-color;
+  }
+  & .avatar {
+    float: left;
+    & img {
+      width: 90px;
+      height: 90px;
+      box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+      border-radius: 50%;
+    }
+  }
+  & .description {
+    float: right;
+  }
+}
+.intro {
+  display: flex;
+  & h2 {
+    width: 325px;
+    height: 108px;
+    padding-top: 150px;
+    padding-right: 133px;
+  }
+  & p {
+    width: 518px;
+    height: 78px;
+    padding-top: 162px;
+  }
+}

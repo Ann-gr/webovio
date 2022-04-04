@@ -1,0 +1,51 @@
+.header-bg {
+  background-image: url("../images/header-bg.jpg");
+  background-position-x: 1px;
+  width: 1441px;
+  height: 811px;
+  margin: 0 auto;
+}
+.container {
+  width: 1111px;
+  padding: 0;
+  margin: 0 165px;
+}
+.header-nav {
+  width: 1111px;
+  height: 43px;
+  padding-top: 24px;
+  padding-bottom: 121px;
+}
+.header-nav .logo {
+  float: left;
+  width: 258px;
+  height: 40px;
+}
+.header-nav .menu {
+  float: right;
+  width: 40px;
+  height: 40px;
+}
+.offer {
+  width: 581px;
+  & p,
+  h1 {
+    color: $bg-color;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 22px;
+  }
+  & h1 {
+    font-size: 60px;
+    line-height: 74px;
+  }
+}
+.link a:before {
+  display: inline-block;
+  content: ' ';
+  background-image: url('../images/triangle-icon.svg');
+  background-size: 10px 10px;
+  height: 10px;
+  width: 10px;
+}  
+
