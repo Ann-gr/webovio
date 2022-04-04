@@ -2,6 +2,11 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
+h2 {
+  font-size: 36px;
+  color: $quote-color;
+  margin: 0;
+}
 p {
   font-weight: 400;
   font-size: 14px;
@@ -11,9 +16,14 @@ a {
   font-size: 16px;
   color: $link-color;
 }
+.link {
+  padding-top: 45px;
+}
 .fs-16 {
   font-size: 16px;
-  padding-bottom: 45px;
+}
+.d-flex {
+  display: flex;
 }
 main {
   background-color: $bg-color;
@@ -33,11 +43,11 @@ main {
   & img {
     width: 156px;
     height: 113px;
-    padding-right: 66px;
+    padding-right: 72px;
   }
 }
 .section-services .border-bottom {
-  height: 794px;
+  height: 668px;
 }
 .border-bottom {
   border-bottom: 1px solid rgba(33, 56, 66, 0.0955529);
@@ -50,16 +60,20 @@ main {
   float: left;
   & p {
     color: $p-color;
+    margin: 0;
+    &.fs-16 {
+      padding-bottom: 45px;
+    }
   }
   & h2 {
-    font-size: 36px;
-    color: $quote-color;
+    padding-top: 29px;
+    padding-bottom: 35px;
   }
   & span {
     background: rgba(255, 215, 35, 0.1);
   }
   & .link {
-    padding-top: 42px;
+    padding-top: 0;
   }
 }
 .employee {
@@ -74,31 +88,63 @@ main {
     font-size: 24px;
     line-height: 40px;
     color: $quote-color;
+    margin: 0;
+    padding-bottom: 50px;
   }
-  & .avatar {
-    float: left;
-    & img {
-      width: 90px;
-      height: 90px;
-      box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
-      border-radius: 50%;
-    }
+  & .avatar img {
+    width: 90px;
+    height: 90px;
+    box-shadow: 20px 25px 43px rgba(0, 0, 0, 0.18);
+    border-radius: 50%;
   }
   & .description {
-    float: right;
+    padding-left: 30px;
+    & h3 {
+      font-size: 22px;
+      color: $quote-color;
+      margin: 0;
+      padding-top: 16px;
+    }
+    & p {
+      font-style: normal;
+      font-size: 16px;
+    }
   }
 }
 .intro {
-  display: flex;
+  padding-top: 150px;
+  padding-bottom: 104px;
   & h2 {
-    width: 325px;
-    height: 108px;
-    padding-top: 150px;
     padding-right: 133px;
+    width: 332px;
   }
   & p {
-    width: 518px;
-    height: 78px;
-    padding-top: 162px;
+    width: 463px;
+    color: $p-color;
   }
+}
+.project {
+  flex-wrap: wrap;
+  & .project-img {
+    width: 735px;
+    height: 550px;
+    margin-left: -165px;
+    padding-right: 96px;
+  }
+}
+.project-1 {
+  width: 445px;
+  padding-top: 90px;
+  & p {
+    margin: 0;
+    padding-top: 24px;
+    color: $p-color;
+  }
+  & .link {
+    padding-top: 90px;
+  }
+}
+.project-employee {
+  position: sticky;
+  top: 50px;
 }
