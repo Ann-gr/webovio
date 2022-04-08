@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/icons.css">
     <title>A creative agency Webovio</title>
 </head>
 
 <body>
-    <header class="header-bg">
+    <header class="header">
         <div class="container">
-            <nav class="header-nav">
+            <nav class="header__nav">
                 <div class="logo">
                     <img src="assets/images/Logo.png" alt="Webovio Logo">
                 </div>
@@ -24,7 +25,7 @@
                     <img src="assets/images/menu-icon.png" alt="">
                 </div>
             </nav>
-            <div class="offer">
+            <div class="header__offer">
                 <p>A place where</p>
                 <h1>A creative agency for redemptive brands</h1>
                 <p class="fs-16">Anteelo is a leading strategic design firm that builds powerful digital solutions for
@@ -32,7 +33,6 @@
                     enterprises.</p>
                 <div class="link"><a href="#"> Get in touch</a></div>
             </div>
-        </div>
         </div>
     </header>
     <main>
@@ -43,10 +43,11 @@
             <img src="assets/images/Ideal.png" alt="Ideal-contracting-Logo">
             <img src="assets/images/PhalenLeadership.png" alt="PhalenLeadership-Logo">
         </div>
-        <section class="section-services">
-            <div class="container">
-                <div class="border-bottom">
-                    <div class="main-offer">
+
+        <section class="section__services">
+            <div class="container border-bottom">
+                <div class="services">
+                    <div class="services__main-offer">
                         <p>What we do for you</p>
                         <h2>Strategy. Design<br> Content. <span>Technology</span> Development </h2>
                         <p class="fs-16">There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick
@@ -54,180 +55,203 @@
                             interdisciplinary team with a framework that fosters candid collaboration.</p>
                         <div class="link"><a href="#"> More know About us</a></div>
                     </div>
-                    <div class="employee">
-                        <p>With More than 10 Years of Knowledge and Expertise we Design and Code Websites and Apps,
-                            We
-                            Build
-                            Brands and Help Them Succeed</p>
-                        <div class="about d-flex">
-                            <div class="avatar">
-                                <img src="assets/images/avatar-01.png" alt="Genevieve Rodriquez">
-                            </div>
-                            <div class="description">
+                    <div class="services__employee">
+                        <p class="employee__text">With More than 10 Years of Knowledge and Expertise we Design and Code
+                            Websites and Apps,
+                            We Build Brands and Help Them Succeed</p>
+                        <div class="employee__about d-flex">
+                            <img src="assets/images/avatar-01.png" alt="Genevieve Rodriquez" class="about__img">
+                            <div class="about__description">
                                 <h3>Genevieve Rodriquez</h3>
                                 <p>Founder & CEO, Webov</p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="projects">
+        <section class="section__projects">
             <div class="container">
-                <div class="border-bottom">
-                    <div class="intro d-flex">
-                        <h2>We Have Some
-                            Awesome Project.</h2>
-                        <p class="fs-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has
-                            been
-                            the
-                            industry's standard dummy text ever since the 1500s, </p>
-                    </div>
-                    <div class="project d-flex">
-                        <img src="assets/images/img-01.jpg" alt="The wall new Balenciaga.com" class="project-img">
-                        <div class="project-1">
-                            <h2>The wall new
-                                Balenciaga.com</h2>
-                            <p class="fs-16">This article is floated online with an aim to help you find the best dvd
-                                printing
-                                solution.
-                            </p>
-                            <p class="fs-16">Dvd printing is an important feature used by large and small DVD production
-                                houses to
-                                print
-                                information on DVDs.</p>
-                            <div class="link"><a href="#">See Case Study</a></div>
-                        </div>
-
-                        <div class="employee project-employee">
-                            <p>“In my history of working with trade show vendors, I can honestly say that there is not
-                                one
-                                company that I've ever worked with that has better service than Exhibit Systems.”</p>
-                            <div class="about d-flex">
-                                <div class="avatar">
-                                    <img src="assets/images/avatar-02.png" alt="Angel Armstrong">
-                                </div>
-                                <div class="description">
-                                    <h3>Angel Armstrong</h3>
-                                    <p>Founder & CEO, Google</p>
-                                </div>
+                <div class="intro d-flex">
+                    <h2>We Have Some
+                        Awesome Project.</h2>
+                    <p class="fs-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has
+                        been
+                        the
+                        industry's standard dummy text ever since the 1500s</p>
+                </div>
+            </div>
+            <div class="project d-flex">
+                <div class="project__img project__img-left">
+                    <img src="assets/images/img-01.jpg" alt="The wall new Balenciaga.com">
+                    <div class="project-review">
+                        <p class="project-review__text">“In my history of working with trade show vendors, I can
+                            honestly say that there is
+                            not
+                            one
+                            company that I've ever worked with that has better service than Exhibit Systems.”
+                        </p>
+                        <div class="project-review__author d-flex">
+                            <div class="author__img">
+                                <img src="assets/images/avatar-02.png" alt="Angel Armstrong">
                             </div>
-
-                        </div>
-                    </div>
-                    <div class="project project-2 d-flex">
-                        <img src="assets/images/img-02.jpg" alt="Is this the future of 3D model?" class="project-img">
-                        <h2>Is this the future of
-                            3D model?</h2>
-                        <p>While it was just a TV show, that little speech at the beginning of the original Star Trek
-                            show
-                            really did do a good job of capturing our feelings about space.</p>
-                        <p>It is those feelings that drive our love of astronomy and our desire to learn more and more
-                            about it.
-                        </p>
-                        <a href="#">See Case Study</a>
-                        <div class="employee project-employee">
-                            <p>“I know they are going to be honest with me. I am not going to get a subpar product; I
-                                know it is
-                                going to be good. That is the number one advantage of working with Exhibit Systems.”</p>
-
-                            <div class="about d-flex">
-                                <div class="avatar">
-                                    <img src="assets/images/avatar-03.jpg" alt="Lina Hart">
-                                </div>
-                                <div class="description">
-                                    <h3>Lina Hart</h3>
-                                    <p>Founder & CEO, Jicc</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project project-3 d-flex">
-                        <img src="assets/images/img-03.jpg" alt=" Is this the future of Online Booking"
-                            class="project-img">
-                        <h2>Is this the future of
-                            Online Booking</h2>
-                        <p>You should be able to find several indispensable facts about motivation in the following
-                            paragraphs.
-                        </p>
-                        <p>If there’s at least one fact you didn’t know before, imagine the difference it might make.
-                        </p>
-                        <a href="#">See Case Study</a>
-                        <div class="employee project-employee">
-                            <p>“Exhibit Systems is not a provider. They are not a supplier. They are a partner with
-                                expertise in
-                                making trade shows effective.”</p>
-                            <div class="about d-flex">
-                                <div class="avatar">
-                                    <img src="assets/images/avatar-04.jpg" alt="Eunice Oliver">
-                                </div>
-                                <div class="description">
-                                    <h3>Eunice Oliver</h3>
-                                    <p>Founder & CEO, Zeem</p>
-                                </div>
+                            <div class="author__name">
+                                <h3 class="fs-16">Angel Armstrong</h3>
+                                <p>Founder & CEO, Google</p>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="project__desc">
+                    <h2>The wall new
+                        Balenciaga.com</h2>
+                    <p class="fs-16">This article is floated online with an aim to help you find the best
+                        dvd
+                        printing
+                        solution.
+                    </p>
+                    <p class="fs-16">Dvd printing is an important feature used by large and small DVD
+                        production
+                        houses to
+                        print
+                        information on DVDs.</p>
+                    <div class="link"><a href="#"> See Case Study</a></div>
+                </div>
             </div>
+
+            <div class="project d-flex fd-reverse">
+                <div class="project__img project__img-right">
+                    <img src="assets/images/img-03.jpg" alt="Is this the future of 3D model?">
+                    <div class="project-review left">
+                        <p class="project-review__text">“I know they are going to be honest with me. I am not
+                            going
+                            to get a subpar product; I
+                            know it is
+                            going to be good. That is the number one advantage of working with Exhibit Systems.”
+                        </p>
+                        <div class="project-review__author d-flex">
+                            <div class="author__img">
+                                <img src="assets/images/avatar-03.png" alt="Lina Hart">
+                            </div>
+                            <div class="author__name">
+                                <h3 class="fs-16">Lina Hart</h3>
+                                <p>Founder & CEO, Jicc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project__desc">
+                    <h2>Is this the future of
+                        3D model?</h2>
+                    <p class="fs-16">While it was just a TV show, that little speech at the beginning of the
+                        original Star
+                        Trek
+                        show
+                        really did do a good job of capturing our feelings about space.</p>
+                    <p class="fs-16">It is those feelings that drive our love of astronomy and our desire to
+                        learn more
+                        and
+                        more
+                        about it.
+                    </p>
+                    <div class="link"><a href="#"> See Case Study</a></div>
+                </div>
+            </div>
+
+            <div class="project d-flex">
+                <div class="project__img project__img-left">
+                    <img src="assets/images/img-02.jpg" alt=" Is this the future of Online Booking">
+                    <div class="project-review">
+                        <p class="project-review__text">“Exhibit Systems is not a provider. They are not a supplier.
+                            They are a partner with
+                            expertise in
+                            making trade shows effective.”</p>
+                        <div class="project-review__author d-flex">
+                            <div class="author__img">
+                                <img src="assets/images/avatar-04.png" alt="Eunice Oliver">
+                            </div>
+                            <div class="author__name">
+                                <h3 class="fs-16">Eunice Oliver</h3>
+                                <p>Founder & CEO, Zeem</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project__desc">
+                    <h2>Is this the future of
+                        Online Booking</h2>
+                    <p class="fs-16">You should be able to find several indispensable facts about motivation in the
+                        following
+                        paragraphs.
+                    </p>
+                    <p class="fs-16">If there’s at least one fact you didn’t know before, imagine the difference it
+                        might
+                        make.
+                    </p>
+                    <div class="link"><a href="#"> See Case Study</a></div>
+                </div>
+            </div>
+            <div class="border-bottom"></div>
         </section>
 
         <section class="deation-evaluation">
             <div class="container">
                 <h2>Deation & Evaluation - Best Way to Kick off Your Product Idea</h2>
-                <div class="list">
-                    <div class="list-item">
+                <div class="list d-flex">
+                    <div class="list__item">
                         <h3>Product Design Sprint</h3>
                         <p>A five-day workshop that will help you answer crucial business questions</p>
-                        <a href="#">Read More</a>
+                        <div class="link"><a href="#"> Read More</a></div>
                     </div>
-                    <div class="list-item">
+                    <div class="list__item">
                         <h3>Scoping Session</h3>
                         <p>A workshop aimed at shaping your business idea, answering questions regarding project
                             planning</p>
-                        <a href="#">Read More</a>
+                        <div class="link"><a href="#"> Read More</a></div>
                     </div>
-                    <div class="list-item">
-                        <h3>UX
+                    <div class="list__item">
+                        <h3>UX<br>
                             Review</h3>
                         <p>An evaluation which will help you radically improve your product.</p>
-                        <a href="#">Read More</a>
+                        <div class="link"><a href="#"> Read More</a></div>
                     </div>
-                    <div class="list-item">
-                        <h3>Code Review</h3>
+                    <div class="list__item">
+                        <h3>Code<br>
+                            Review</h3>
                         <p>Do you know what one of the key secrets of success
                             is what makes people successful in business</p>
-                        <a href="#">Read More</a>
+                        <div class="link"><a href="#"> Read More</a></div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="call-to-action">
-            <h1>Let’s make something amazing together.</h1>
-            <a href="#">LET'S GET STARTED</a>
+        <div class="call-to-action d-flex">
+            <div class="call-to-action__title">
+                <h1>Let’s make something amazing together.</h1>
+            </div>
+            <div class="link"><a href="#"> LET'S GET STARTED</a></div>
         </div>
 
     </main>
     <footer>
         <div class="container">
-            <div class="contacts">
-                <div class="border-bottom">
-                    <div class="phone">
-                        <h4>Phone</h4>
-                        <p>+32 50 31 28 32</p>
-                    </div>
-                    <div class="address">
-                        <h4>Address</h4>
-                        <p>491 Merlin Crest Sui</p>
-                    </div>
+            <div class="contacts d-flex border-bottom">
+                <div class="contacts__phone">
+                    <p>Phone</p>
+                    <p class="fw-bold">+32 50 31 28 32</p>
+                </div>
+                <div class="contacts__address">
+                    <p>Address</p>
+                    <p class="fw-bold">491 Merlin Crest Sui</p>
                 </div>
             </div>
-            <div class="border-bottom">
-                <div class="list">
-                    <div class="list-item">
+            <div class="footer-services d-flex border-bottom">
+                <div class="list d-flex">
+                    <div class="list__item">
                         <h4>Services</h4>
                         <ul>
                             <li>Strategy Design</li>
@@ -237,7 +261,7 @@
                             <li>Development </li>
                         </ul>
                     </div>
-                    <div class="list-item">
+                    <div class="list__item">
                         <h4>Help And Advice</h4>
                         <ul>
                             <li>How it works</li>
@@ -246,7 +270,7 @@
                             <li>FAQ</li>
                         </ul>
                     </div>
-                    <div class="list-item">
+                    <div class="list__item">
                         <h4>Company</h4>
                         <ul>
                             <li>About</li>
@@ -255,21 +279,24 @@
                             <li>Jobs</li>
                         </ul>
                     </div>
-                    <div class="list-item">
-                        <h4>Get in Touch</h4>
-                        <p>Feel free to get in touch with us vai email</p>
-                        <a href="mailto:info.webovio@gmail.com">info.webovio@gmail.com</a>
-                        <div class="icons">
-                            <i></i>
-                        </div>
+                </div>
+                <div class="list-contacts">
+                    <h4>Get in Touch</h4>
+                    <p>Feel free to get in touch with us vai email</p>
+                    <a class="fw-bold" href="mailto:info.webovio@gmail.com">info.webovio@gmail.com</a>
+                    <div class="list-contacts__icons">
+                        <div class="icon"><i class="fab fa-facebook"></i></div>
+                        <div class="icon"><i class="fab fa-twitter"></i></div>
+                        <div class="icon"><i class="fab fa-google-plus-g"></i></div>
+                        <div class="icon"><i class="fab fa-linkedin-in"></i></div>
                     </div>
                 </div>
             </div>
             <nav class="footer-nav">
-                <div class="logo">
+                <div class="footer-nav__logo">
                     <img src="assets/images/Logo-footer.png" alt="Webovio Logo">
                 </div>
-                <div class="copyrights">
+                <div class="footer-nav__copyrights">
                     <p>© 2020@webovio. All Rights Reserved.</p>
                 </div>
             </nav>
