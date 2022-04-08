@@ -296,6 +296,7 @@ footer {
   }
   & .list {
     padding-top: 60px;
+    padding-bottom: 50px;
     width: 50%;
     justify-content: space-between;
     & h4 {
@@ -332,17 +333,33 @@ footer {
     & a {
       font-size: 24px;
     }
-    & .icon {
-      width: 33px;
-      height: 33px;
-      background-color: #444a34;
-      border-radius: 50%;
-      margin-right: 11px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #5e6648;
-      font-size: 18px;
+    & .list-contacts__icons {
+      padding-top: 26px;
+      & .icon {
+        width: 33px;
+        height: 33px;
+        background-color: #444a34;
+        border-radius: 50%;
+        margin-right: 11px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #5e6648;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      & .icon:hover {
+        background-color: #ffd723;
+        color: #ffffff;
+      }
     }
+  }
+  & .footer-nav {
+    padding-top: 26px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  & .footer-nav__copyrights {
+    display: inline-flex;
   }
 }
